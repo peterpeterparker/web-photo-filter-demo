@@ -1,20 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Web Photo Filter Demo
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <h1>Image source tag</h1>
+
+  <img src={{image}}/>
+
+  <h1>Sepia</h1>
+
+  <web-photo-filter src={{image}} filter="sepia"></web-photo-filter>
+
+  <h1>Grey Scale</h1>
+
+  <web-photo-filter src={{image}} filter="greyscale"></web-photo-filter>
+
+  <p>Photo by <a href="https://unsplash.com/@joshuaearle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Earle</a> on <a href="https://unsplash.com/s/photos/jura-switzerland?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 </ion-content>
